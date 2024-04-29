@@ -5,7 +5,7 @@ from typing import Optional,List
 class User(BaseModel):
     userId:int
     email:EmailStr
-    provider: Optional[str] = None
+    provider: Optional[str] = ""
     role:str
 
 class userCreate(BaseModel):

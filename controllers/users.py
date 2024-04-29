@@ -47,7 +47,7 @@ def auth_user(request: Request):
              email=decoded_token["email"],
              provider=decoded_token["firebase"]["sign_in_provider"])
         
-        print(new_user["provider"])
+        print(decoded_token)
         
         if session.query(User).filter(User.email == new_user.email).first() is None:
             add_to_db(User(email=new_user.email,provider = new_user.provider,role="user"))
