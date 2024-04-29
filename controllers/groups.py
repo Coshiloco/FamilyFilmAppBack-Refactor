@@ -68,7 +68,12 @@ def GroupData_id(id:int,idiom):
             vote_average=movie_data.vote_average,
             vote_count=movie_data.vote_count
             ))    
-    
+    print(f"GroupData_id: {group.id}")
+    print(f"GroupData_id: {group.name}")
+    print(f"GroupData_id: {user_owner}")
+    print(f"GroupData_id: {wls}")
+    print(f"GroupData_id: {vls}")
+    print(f"GroupData_id: {users}")
     return GroupSchema.GroupData(
         id=group.id, 
         name=group.name,  
