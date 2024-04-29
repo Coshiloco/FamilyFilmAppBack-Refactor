@@ -10,7 +10,7 @@ class User(BaseModel):
 
 class userCreate(BaseModel):
     email:EmailStr
-    provider:str
+    provider:Optional[str]
     
 
 
